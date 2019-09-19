@@ -52,5 +52,6 @@ public class Task2 {
             }
             s = input.readLine().split(" ");
         }
+        input.close();
     }
 }
