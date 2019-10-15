@@ -41,5 +41,7 @@ public class MySqlConnection {
 
         customerDao.delete(customer1);
         System.out.println(customerDao.readAll());
+
+        entityManager.close();
     }
 }
