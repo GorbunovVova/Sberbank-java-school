@@ -11,11 +11,11 @@ public class LightService {
     private LightRepo lightRepo;
 
     public LightEntity findById(Long id) {
-        return (LightEntity) lightRepo.getOne(id);
+        return lightRepo.getOne(id);
     }
 
     public LightEntity create(LightEntity lightEntity) {
-        return (LightEntity) lightRepo.save(lightEntity);
+        return lightRepo.save(lightEntity);
     }
 
     public void deleteById(Long id) {
@@ -24,7 +24,7 @@ public class LightService {
 
     public LightEntity update(Long id, LightEntity lightEntity) {
         lightEntity.setId(id);
-        return (LightEntity) lightRepo.save(lightEntity);
+        return lightRepo.save(lightEntity);
     }
 
     public Iterable<LightEntity> getAll() {

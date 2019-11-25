@@ -11,11 +11,11 @@ public class WetnessService {
     private WetnessRepo wetnessRepo;
 
     public WetnessEntity findById(Long id) {
-        return (WetnessEntity) wetnessRepo.getOne(id);
+        return wetnessRepo.getOne(id);
     }
 
     public WetnessEntity create(WetnessEntity wetnessEntity) {
-        return (WetnessEntity) wetnessRepo.save(wetnessEntity);
+        return wetnessRepo.save(wetnessEntity);
     }
 
     public void deleteById(Long id) {
@@ -24,7 +24,7 @@ public class WetnessService {
 
     public WetnessEntity update(Long id, WetnessEntity wetnessEntity) {
         wetnessEntity.setId(id);
-        return (WetnessEntity) wetnessRepo.save(wetnessEntity);
+        return wetnessRepo.save(wetnessEntity);
     }
 
     public Iterable<WetnessEntity> getAll() {

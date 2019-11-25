@@ -11,7 +11,7 @@ public class GasService {
     private GasRepo gasRepo;
 
     public GasEntity findById(Long id) {
-        return (GasEntity) gasRepo.getOne(id);
+        return gasRepo.getOne(id);
     }
 
     public String create(GasEntity gasEntity) {
@@ -28,7 +28,7 @@ public class GasService {
 
     public GasEntity update(Long id, GasEntity gasEntity) {
         gasEntity.setId(id);
-        return (GasEntity) gasRepo.save(gasEntity);
+        return gasRepo.save(gasEntity);
     }
 
     public Iterable<GasEntity> getAll() {

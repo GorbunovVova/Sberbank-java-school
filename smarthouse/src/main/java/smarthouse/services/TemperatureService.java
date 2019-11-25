@@ -11,11 +11,11 @@ public class TemperatureService {
     private TemperatureRepo temperatureRepo;
 
     public TemperatureEntity findById(Long id) {
-        return (TemperatureEntity) temperatureRepo.getOne(id);
+        return temperatureRepo.getOne(id);
     }
 
     public TemperatureEntity create(TemperatureEntity temperatureEntity) {
-        return (TemperatureEntity) temperatureRepo.save(temperatureEntity);
+        return temperatureRepo.save(temperatureEntity);
     }
 
     public void deleteById(Long id) {
@@ -24,7 +24,7 @@ public class TemperatureService {
 
     public TemperatureEntity update(Long id, TemperatureEntity temperatureEntity) {
         temperatureEntity.setId(id);
-        return (TemperatureEntity) temperatureRepo.save(temperatureEntity);
+        return temperatureRepo.save(temperatureEntity);
     }
 
     public Iterable<TemperatureEntity> getAll() {
