@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Smart House</title>
+</head>
+<body>
+<div>
+    <div class="my-lg-5">
+        <h1 class="text-center">Умный дом</h1>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="card text-white bg-danger mb-3" style="height: 15rem;">
+                <div class="card-header">ТЕМПЕРАТУРА</div>
+                <div class="card-body text-center">
+                    <h2 class="card-title" id="temperature"></h2>
+                    <form id="temperatureForm" action="">
+                        <input type="text" class="form-control mb-2" id="temperatureInput"
+                               placeholder="Температура" name="temperature">
+                        <button class="btn btn-light btn-block" id="temperatureButton" type="submit">Установить
+                            температуру
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card text-white bg-info mb-3" style="height: 15rem;">
+                <div class="card-header">СОДЕРЖАНИЕ ГАЗА</div>
+                <div class="card-body text-center">
+                    <h2 class="card-title btn-block" id="gas"></h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card text-white bg-success mb-3" style="height: 15rem;">
+                <div class="card-header">ВЛАЖНОСТЬ</div>
+                <div class="card-body text-center">
+                    <h2 class="card-title" id="wetness"></h2>
+                    <form id="wetnessForm" action="">
+                        <input type="text" class="form-control mb-2" id="wetnessInput" placeholder="Влажность">
+                        <button type="submit" class="btn btn-light btn-block">Установить влажность</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card border-danger mb-3" style="height: 15rem;">
+                <div class="card-header">БУДИЛЬНИК</div>
+                <div class="card-body text-danger">
+                    <h2 class="card-title" id="alarm"></h2>
+                    <form id="alarmForm" action="">
+                        <input type="text" class="form-control mb-2" id="alarmInput" placeholder="hh:mm:ss">
+                        <button type="submit" class="btn btn-danger btn-block">Установить будильник</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card text-white bg-warning mb-3" style="height: 15rem;">
+                <div class="card-header">СВЕТ</div>
+                <div class="card-body text-center">
+                    <form id="lightForm" action="">
+                        <h5 class="card-title" id="light">Свет включен</h5>
+                        <button type="submit" class="btn btn-light btn-block" id="lightButton">Вкл/Выкл</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card border-success mb-3" style="height: 15rem;">
+                <div class="card-header">ЭЛЕКТРОПРИБОРЫ</div>
+                <div class="card-body">
+                    <form id="tvForm" action="">
+                        <div class="input-group mb-3">
+                            <p class="card-text form-control" id="tv">Телевизор</p>
+                            <div class="input-group-append">
+                                <button class="btn btn-success" type="submit" id="buttonTv">Вкл/Выкл</button>
+                            </div>
+                        </div>
+                    </form>
+                    <form id="gameConsoleForm" action="">
+                        <div class="input-group mb-3">
+                            <p class="card-text form-control" id="gameConsole">Приставка</p>
+                            <div class="input-group-append">
+                                <button class="btn btn-success" type="submit" id="buttonGameConsole">Вкл/Выкл</button>
+                            </div>
+                        </div>
+                    </form>
+                    <form id="kettleForm" action="">
+                        <div class="input-group mb-3">
+                            <p class="card-text form-control" id="kettle">Чайник</p>
+                            <div class="input-group-append">
+                                <button class="btn btn-success" type="submit" id="buttonKettle">Вкл/Выкл</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
